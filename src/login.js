@@ -136,7 +136,7 @@ export default class Login extends React.Component{
                         return (
                           <li key={user.id}>
                           <h3>{user.title}</h3>
-                          <p>brought by: <strong>{user.user}</strong>
+                          <p>Generated  by: <strong>{user.user}</strong>
                             <button onClick={() => this.removeItem(user.id)}>Remove Item</button>
                           </p>
                         </li>

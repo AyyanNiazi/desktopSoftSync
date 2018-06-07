@@ -63,15 +63,15 @@ export default class CompanyLogin extends Component {
     return (
       <div className='app'>
         <header>
-            <div className="wrapper">
+            <div>
               <h1>Company Portal</h1>
               <i className="fa fa-shopping-basket" aria-hidden="true"></i>     
               <Link to='/logout' className='link'> Log out </Link>     
                   <Link to='/login' className='linkC'> Student Portal </Link>             
             </div>
         </header>
-        <div className='container'>
-          <section className='add-item'>
+        <div >
+          <section>
                 <form onSubmit={this.handleSubmit}>
                   <input type="text" name="username" placeholder="What's your name?" onChange={this.handleChange} value={this.state.username} />
                   <input type="text" name="currentItem" placeholder="Write about yourself?" onChange={this.handleChange} value={this.state.currentItem} />
